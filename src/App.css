@@ -2,21 +2,40 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.App-hero {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.App-hero-image {
+  width: 100%;
+  height: 100%;
+  background: center/cover url("/sakura.jpg");
+}
+
+.App-hero-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  position: absolute;
+  top: 0;
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
+  max-width: 70%;
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  position: relative;
+  z-index: 1;
 }
 
 .App-link {

@@ -6,19 +6,14 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <div className="App-hero">
+          <div className="App-hero-image" />
+          <div className="App-hero-overlay" />
+        </div>
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
           <p>
-            Edit <code>src/App.js</code> and save to reload.
+            Hi! My name is Tatiana Potetinova and I'm a software engineer who's really into flowers.
           </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
         </header>
       </div>
     );
